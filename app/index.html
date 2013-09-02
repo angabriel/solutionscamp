@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="drinkApp">
+<head>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-resource.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/service/drinkService.js"></script>
+    <script src="js/controller/drinkController.js"></script>
+    <script src="js/directive/scList.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+<!-- navigation -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand">Solutions-Camp 2013</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#/team">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<br/>
+
+<div ng-view class="row-fluid">
+    <!-- view partial of current routing -->
+</div>
+
+</body>
+</html>

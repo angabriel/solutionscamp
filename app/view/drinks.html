@@ -1,0 +1,16 @@
+<div ng-controller="DrinkController">
+
+    <!-- drink list -->
+    <div class="col-md-6">
+        <div class="well">
+            <sc-list options="drinkOptions" />
+        </div>
+    </div>
+    <!-- drink form -->
+    <div class="col-md-6">
+        <div class="well" ng-show="editingItem">
+            <ng-include src=" 'view/drink-form.html' " />
+        </div>
+    </div>
+
+</div>

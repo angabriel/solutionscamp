@@ -1,0 +1,23 @@
+<form role="form" class="form-horizontal">
+    <div class="form-group">
+        <label for="name" class="col-lg-2 control-label">Name</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" id="name" placeholder="Enter name" ng-model="editingItem.name"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" ng-model="editingItem.still"> still
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button class="btn btn-success" ng-click="save()" ng-disabled="isClean() || !editingItem.name">Save</button>
+            <button class="btn btn-default" ng-click="revert()" ng-disabled="isClean()">Revert</button>
+        </div>
+    </div>
+</form>
