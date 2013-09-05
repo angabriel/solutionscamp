@@ -7,7 +7,9 @@ angular.module('drinkService', ['ngResource']).factory('Drink', function ($resou
         );
 
         Drink.prototype.update = function (cb, errorcb) {
-            return Drink.update({id:this._id.$oid}, angular.extend({}, this, {_id:undefined}), cb, errorcb);
+            return Drink.update( {id:this._id.$oid},
+                                 angular.extend( {}, this, {_id:undefined} ),
+                                 cb, errorcb);
         };
 
         return Drink;
